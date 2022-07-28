@@ -51,8 +51,8 @@ window.onload = function() {
 
     // Create Guesses ul 
     const result = function() {
-        let wordHolder = document.getElementById("hold");
-        let correct = document.createElement("ul");
+        wordHolder = document.getElementById("hold");
+        correct = document.createElement("ul");
 
         for (let i = 0; i < word.length; i++) {
             correct.setAttribute('id', 'my-word');
