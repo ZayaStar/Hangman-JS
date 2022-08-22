@@ -61,7 +61,7 @@ window.onload = function() {
 
             if (word[i] === " ") {
                 guess.innerHTML = "-";
-                space = 1;
+                space += 1;
             } else {
             guess.innerHTML = "_";
             }
@@ -80,6 +80,7 @@ window.onload = function() {
 
         if (lives < 1) {
             showLives.innerHTML = "Game Over!"
+            document.getElementById("alphabet").style.visibility = "hidden";
         }
         for (let i = 0; i < guesses.length; i++) {
             if (counter + space === guesses.length) {
